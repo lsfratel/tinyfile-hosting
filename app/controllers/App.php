@@ -53,7 +53,7 @@ class App extends Controller
      *
      * @access  public
      * @param   \mako\view\ViewFactory $view
-     * @param   integer  $id The database id
+     * @param   string  $id The id generated for the file
      * @return  \mako\view\View
      */
     public function show(ViewFactory $view, string $id): View
@@ -97,7 +97,7 @@ class App extends Controller
      *
      * @access  public
      * @param   \mako\view\ViewFactory $view
-     * @param   string  $id The database id
+     * @param   string  $token The token generated for the file
      * @return  mako\http\response\senders\Redirect
      */
     public function delete(ViewFactory $view, string $token): Redirect
